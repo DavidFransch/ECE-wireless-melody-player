@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="12dp"
+tools:context=".MelodyActivity">
+
+
+    <Button
+        android:id="@+id/buttonA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonB2"
+        android:text="A" />
+
+    <Button
+        android:id="@+id/buttonB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:text="B" />
+
+    <Button
+        android:id="@+id/buttonC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/positionBar"
+        android:layout_alignTop="@+id/buttonA2"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/buttonD2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonA2"
+        android:layout_alignTop="@+id/buttonE2"
+        android:text="D" />
+
+<Button
+    android:id="@+id/buttonE2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="148dp"
+    android:text="E" />
+
+    <Button
+        android:id="@+id/buttonF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonC2"
+        android:layout_alignTop="@+id/buttonD2"
+        android:text="F" />
+
+    <Button
+        android:id="@+id/buttonG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="G" />
+
+<Button
+    android:id="@+id/playBtn2"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="90dp"
+    android:background="@drawable/play" />
+
+    <Button
+        android:id="@+id/buttonBT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:text="Bluetooth" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/buttonC2"
+        android:layout_above="@+id/volumeBar"
+        android:src="@drawable/loud" />>
+
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/volumeBar"
+        android:layout_alignStart="@+id/buttonA2"
+        android:src="@drawable/mute" />
+
+    <SeekBar
+        android:id="@+id/positionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playBtn2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/elapsedTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/positionBar"
+        android:layout_alignStart="@+id/buttonA2"
+        android:text="0:11" />
+
+    <TextView
+        android:id="@+id/remainingTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/positionBar"
+        android:layout_alignEnd="@+id/buttonC2"
+        android:text="-1.49" />
+
+<SeekBar
+    android:id="@+id/volumeBar"
+    android:layout_width="362dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="31dp" />
+
+    <TextView
+        android:id="@+id/noteDisp"
+        android:layout_width="254dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/elapsedTimeLabel"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Please select a melody" />
+
+    <Button
+        android:id="@+id/melodyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonA2"
+        android:layout_alignTop="@+id/buttonBT2"
+        android:text="Melody Mode" />
+</RelativeLayout>
